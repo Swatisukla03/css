@@ -1,0 +1,66 @@
+<!-- CSS Layout -The position Property -->
+<!-- The position Property
+-static
+-relative
+-fixed 
+-absolute
+ -->
+ <!-- Static position-There is no position in any special way,it was always positioned according to the normal flow of the page. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Positional Properties</title>
+     <style>
+         div.static{
+             position: static;
+             border: 3px solid #73AD21;
+         }
+         div.relative{
+             position: relative;
+             left: 30px;
+             border:3px solid #73AD21
+         }
+         div.fixed{
+             position: fixed;
+             bottom: 0;
+             right: 0;
+             width: 300px;
+             border: 3px solid #73AD21;
+
+         }
+         div.absolute{
+             position: absolute;
+             top: 80px;
+             right: 0;
+             width: 200px;
+             height: 100px;
+             border: 3px solid #73AD21;
+
+         }
+     </style>
+ </head>
+ <body>
+     <h2>position :static;</h2>
+     <p>An element with position :static ;is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+     <div class="static">
+         This div element has positioned :static
+
+     </div>
+     <!-- Setting the top,right,bottom,and left properties of a relatively -postioned element wil cause it  to beadjusted away from its normal position .Other content will not be adjusted to fit  into any gap left by the element. -->
+
+     <div class="relative">
+         This div element has position is relative;
+        </div>
+        <!-- This means it will always stays in the same place even if the pages is not scrolled . -->
+     <div class="fixed">
+         This is the div element that will show the fixed position of the element.
+     </div>
+     <div class="absolute">
+         This is the element where we are using absolute position.
+     </div>
+      
+ </body>
+ </html>
