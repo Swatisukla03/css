@@ -1,0 +1,38 @@
+<!-- Animation in Css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        @keyframes example{
+          0% {background-color: blueviolet;}
+          15%{background-color: yellow;}
+          20% {background-color: tomato;}
+          30%{background-color: sienna;}
+          40%{background-color: skyblue;}
+          55%{background-color: sandybrown;}
+          75%{background-color: purple;}
+          85%{background-color: orange;}
+          100%{background-color: navy;}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div></div>
+    <p><b>Note:</b>When an animation is finished ,it goes back to its original style. </p>
+
+    
+    
+</body>
+</html>
