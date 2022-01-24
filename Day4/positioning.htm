@@ -1,0 +1,49 @@
+<!-- Positioning in css [Absolute,fixed,sticky,Relative] -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+         .box{
+            display: inline-block;
+            border: 2px  solid blue;
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+        }
+        #box3{
+            /* relative to its normal position  and will lan=ve the gap */
+            /* position:relative;
+            top: 12px;
+            left:12px;
+            right: 10px; */
+            /*Absolute: relative to the position of its first parent and no gap  */
+              /* position:absolute;
+            top: 12px;
+            left:12px;
+            right: 10px; */
+            /* position: fixed */
+             position:fixed;
+           right: 4px;
+           bottom: 2px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+
+    
+</body>
+</html>
